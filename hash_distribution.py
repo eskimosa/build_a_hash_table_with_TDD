@@ -8,5 +8,5 @@ def distribute(items, num_containers, hash_function=hash):
 def plot(histogram):
     for key in sorted(histogram):
         count = histogram[key]
-        padding = (max(histogram.values()) - count) * " "
+        padding = (max(histogram.pairs()) - count) * " "
         print(f"{key:3} {'■' * count}{padding} ({count})")
